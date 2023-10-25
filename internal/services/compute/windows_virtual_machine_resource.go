@@ -544,7 +544,7 @@ func resourceWindowsVirtualMachineCreate(d *pluginsdk.ResourceData, meta interfa
 
 				// Data Disks are instead handled via the Association resource - as such we can send an empty value here
 				// but for Updates this'll need to be nil, else any associations will be overwritten
-				DataDisks: &[]compute.DataDisk{},
+				// DataDisks: &[]compute.DataDisk{},
 			},
 
 			// Optional
